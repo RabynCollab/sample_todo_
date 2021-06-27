@@ -12,7 +12,7 @@ form.addEventListener('submit', (e) => {
   if (db == null) {
     newDb = [];
     newDb.push({
-      title: inputVal.value,
+      title: inputVal.value.toUpperCase(),
       description: inputSec.value
     });
     localStorage.setItem('data', JSON.stringify(newDb));
